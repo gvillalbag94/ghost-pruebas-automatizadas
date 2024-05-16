@@ -1,0 +1,9 @@
+# Ignore the downloads cypress folder
+cypress/downloads
+
+# Ignore the node_modules dependencies
+node_modules
+
+# Ignore the package-lock.json
+package-lock.json
+

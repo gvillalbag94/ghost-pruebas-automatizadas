@@ -1,18 +1,18 @@
 const login = require('../../login')
 const initGhost = require('../../init_ghost')
-const faker = require('@faker-js/faker')
+import { faker } from '@faker-js/faker';
 
-context('Crear una Page con una palabra aleatoria', () => {
+context('Datos Aleatorios: Crear una Page con un emoji aleatoria', () => {
 
-    let title = faker.lorem.words(1);
-    let description = faker.lorem.words(1);
-    let urlSlug = faker.lorem.words(1);
+    let title = faker.internet.emoji();
+    let description = faker.internet.emoji();
+    let urlSlug = faker.internet.emoji();
 
     beforeEach(() => {
        initGhost.visitGhost();
     });
 
-    it('Creación de una palabra con titulo, descripción y slug con una palabra alpha',() => {
+    it('Creación de una palabra con titulo, descripción y slug con un emoji aleatoria',() => {
         login.signinEvent();
 
         // Seleccionar la sección de "Pages".

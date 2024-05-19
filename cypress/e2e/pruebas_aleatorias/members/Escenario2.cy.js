@@ -1,9 +1,9 @@
 import { faker } from '@faker-js/faker';
-describe('Creacion_de_un_member a priori', () => {
+describe('Creacion de un member con email vacio (Aleatoria)', () => {
   
     beforeEach(()=>{
       cy.visit('http://54.188.89.84/ghost/')
-      cy.wait(5000)
+      cy.wait(3000)
    })
    let nombre;
    let email;
@@ -33,9 +33,9 @@ describe('Creacion_de_un_member a priori', () => {
       cy.get('a[data-test-nav=members]').click()
       cy.wait(2000)
       cy.get('button[data-test-leave-button]').click()
-      cy.wait(5000)
+      cy.wait(3000)
       cy.reload()
-      cy.wait(5000)
+      cy.wait(3000)
       cy.get('a[data-test-nav=members]').click()
       cy.wait(2000)
       cy.contains(nombre).should('not.exist')

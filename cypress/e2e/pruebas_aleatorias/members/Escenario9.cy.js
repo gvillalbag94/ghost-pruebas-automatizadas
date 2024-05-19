@@ -1,9 +1,9 @@
 import { faker } from '@faker-js/faker';
-describe('Creacion_de_un_member a priori', () => {
+describe('Edición de un member con nombre con caracteres especiales (Aleatoria)', () => {
   
     beforeEach(()=>{
       cy.visit('http://54.188.89.84/ghost/')
-      cy.wait(5000)
+      cy.wait(3000)
    })
    let nombre;
    let email;
@@ -28,9 +28,9 @@ describe('Creacion_de_un_member a priori', () => {
     cy.get('button[data-test-button=save]').click()
     cy.wait(2000)
     cy.get('a[data-test-nav=members]').click()
-    cy.wait(5000)
+    cy.wait(3000)
     cy.reload()
-    cy.wait(5000)
+    cy.wait(3000)
     cy.get('a[data-test-nav=members]').click()
     cy.wait(2000)
     cy.get("tbody tr").click()
@@ -51,9 +51,9 @@ describe('Creacion_de_un_member a priori', () => {
       cy.get('button[data-test-button=save]').click()
       cy.wait(2000)
       cy.get('a[data-test-nav=members]').click()
-      cy.wait(5000)
+      cy.wait(3000)
       cy.reload()
-      cy.wait(5000)
+      cy.wait(3000)
       cy.get('a[data-test-nav=members]').click()
       cy.wait(2000)
       cy.get("tbody tr").click()

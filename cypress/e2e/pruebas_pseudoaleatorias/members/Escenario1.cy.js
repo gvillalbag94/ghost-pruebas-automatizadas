@@ -1,8 +1,8 @@
-describe('Creacion_de_un_member', () => {
+describe('Creacion de un member con nombre y email correctos (Pseudoaleatoria)', () => {
   
     beforeEach(()=>{
       cy.visit('http://54.188.89.84/ghost/')
-      cy.wait(5000)
+      cy.wait(3000)
    })
    let nombre;
    let email;
@@ -23,8 +23,9 @@ describe('Creacion_de_un_member', () => {
         (response) => {
           console.log(response.body);
           cy.wait(2000)
-          nombre = response.body.name;
-          email = response.body.email;
+          var numero = Math.floor(Math.random()*response.body.length);
+          nombre = response.body[numero].name;
+          email = response.body[numero].email;
           console.log(nombre);
           console.log(email);
         })
@@ -36,9 +37,9 @@ describe('Creacion_de_un_member', () => {
       cy.get('button[data-test-button=save]').click()
       cy.wait(2000)
       cy.get('a[data-test-nav=members]').click()
-      cy.wait(5000)
+      cy.wait(3000)
       cy.reload()
-      cy.wait(5000)
+      cy.wait(3000)
       cy.get('a[data-test-nav=members]').click()
       cy.wait(2000)
       cy.contains(email).should('exist')

@@ -64,8 +64,6 @@ Cada carpeta contiene 40 casos de preueba implementados de acuerdo a la estrateg
 6. Se ejecutaran los 120 escenarios de pruebas de acuerdo al contenido mencionado anteirormente.
 
 ## Instrucciones de instalación 2. 
-
-# Instrucciones de instalación.
 Cada carpeta contiene 40 casos de preueba implementados de acuerdo a la estrategia de pruebas señalada en su carpeta contenedora.  Para configura el proyecto en ambiente de instalación, siga el siguiente procedimiento:
 
 1. A través de una consola, genere una carpeta para descargar el proyecto.

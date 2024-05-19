@@ -1,12 +1,21 @@
 # ghost-pruebas-automatizadas - Taller Semana 7
 
+## Integrantes:
+
+* Victor Alfonso Duarte Quintero - v.duarteq@uniandes.edu.co
+* Juan Esteban Herrera - je.herrerap@uniandes.edu.co
+* Leonardo Cardenas - dl.riverac1@uniandes.edu.co
+* Felipe Villalba Gil - g.villalbag@uniandes.edu.co
+
+## Implementación:
+
 Para la presente entrega se implementaron:
 
  - 40 Casos de prueba con estrategia pool de datos aleatorios
  - 40 Casos de preuba con estrategia escenario apriori.
  - 40 Casos de preuba con estrategia pool de datos (pseudo) aleatorio aleatorios 
 
-A continuación, se detalla para cada caso la estretegia de generación de datos en caaso:
+A continuación, se detalla para cada caso la estretegia de generación de datos en caso:
 
 # A. Estrategia escenario aleatorio.
 Para generar datos aleatorios, se utilizó la librería Faker, importándola en cada uno de los archivos que implementaban los 40 casos de prueba mencionados. Dependiendo de las entradas requeridas por cada escenario de prueba, se utilizaron los diversos métodos proporcionados por Faker, tales como numbers, word, words, paragraph, paragraphs, email, entre otros.
@@ -21,8 +30,8 @@ Para la generación pseudo aleatoria de datos, se utilizó el generador de datos
 Esta URL se utiliza en cada caso de prueba cypres, al obtener el response del api su body lo guardo en un array. También se genera un numero aleatorio de la longitud del array y este numero se utiliza como posicion del array para obtener el valor.
 
 
+## Contenido del repositorio.
 
-# Contenido del repositorio.
 El presente repositorio contiene un proyecto Cypress, en su interior puede ubicarse las siguientes carpetas:
 
 - /GHOST-PRUEBAS-AUTOMATIZADAS/cypress/e2e/pruebas_aleatorias
@@ -30,19 +39,37 @@ El presente repositorio contiene un proyecto Cypress, en su interior puede ubica
 - /GHOST-PRUEBAS-AUTOMATIZADA/cypress/e2e/pruebas_pseudoaleatorias
 
 
-# Instrucciones de instalación.
+## Instrucciones de instalación.
+
 Cada carpeta contiene 40 casos de preueba implementados de acuerdo a la estrategia de pruebas señalada en su carpeta contenedora.  Para configura el proyecto en ambiente de instalación, siga el siguiente procedimiento:
 
 1. A través de una consola, genere una carpeta para descargar el proyecto.
-2. Ingrese a la carpeta creada, clone el repositorioa través del  comando "git clone https://github.com/gvillalbag94/ghost-pruebas-automatizadas.git".
-3. Ingrese con una consola a la carpeta "GHOST-PRUEBAS-AUTOMATIZADAS".
-4. Ejecute el comando "npm install cypress"
-5. Ejecute el comando "npm install faker"
-6. Ejecute el comando "./node_modules/.bin/cypress open"
-7. El comando anterior desplegará la consolta de Cypress y en su interior, cada uno de los casos de prueba generados.
-8. Ingrese a la carpeta "pruebas_aleatorias" y ejecute cualquiera de los archivos desplegados.
-9. Ingrese a la carpeta "pruebas-apriori" y ejecute cualquiera de los archivos desplegados.
-10. Ingrese a la carpeta "pruebas_pseudoaleatorias" y ejecute cualquiera de los archivos desplegados.
 
+2. Ingrese a la carpeta creada, clone el repositorioa través del  comando:
+
+```bash
+    git clone https://github.com/gvillalbag94/ghost-pruebas-automatizadas.git
+```
+
+3. Ingrese con una consola a la carpeta "GHOST-PRUEBAS-AUTOMATIZADAS".
+
+4. Ejecute el comando "npm install"
+
+5. Ejecute el comando:
+
+```bash
+    cypress run --headless
+```
+
+6. Se ejecutaran los 120 escenarios de pruebas de acuerdo al contenido mencionado anteirormente.
+
+
+## Incidencias:
+
+1. Se espera que las prueba falle en el escenario de pruebas [Escenario 5](https://github.com/gvillalbag94/ghost-pruebas-automatizadas/issues/5)  debido a que el uso de un caracter especial para crear una "page" no es valido, este error sucede en las pruebas con datos aleatorios, a-priori y pseudoaleatorios.
+
+2. Se espera que las prueba falle en el escenario de pruebas [Escenario 10](https://github.com/gvillalbag94/ghost-pruebas-automatizadas/issues/6)  debido a que el uso de un emojis para crear una "page" no es valido, este error sucede en las pruebas con datos aleatorios, a-priori y pseudoaleatorios.
+
+3. Se espera que las prueba falle en el escenario de pruebas [Escenario 9](https://github.com/gvillalbag94/ghost-pruebas-automatizadas/issues/7)  debido a que el uso de URLs extensas para crear una "page" no es valido, este error sucede en las pruebas con datos pseudoaleatorios.
 
 

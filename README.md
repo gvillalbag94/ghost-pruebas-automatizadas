@@ -39,7 +39,7 @@ El presente repositorio contiene un proyecto Cypress, en su interior puede ubica
 - /GHOST-PRUEBAS-AUTOMATIZADA/cypress/e2e/pruebas_pseudoaleatorias
 
 
-## Instrucciones de instalación.
+## Instrucciones de instalación 1.
 
 Cada carpeta contiene 40 casos de preueba implementados de acuerdo a la estrategia de pruebas señalada en su carpeta contenedora.  Para configura el proyecto en ambiente de instalación, siga el siguiente procedimiento:
 
@@ -62,6 +62,22 @@ Cada carpeta contiene 40 casos de preueba implementados de acuerdo a la estrateg
 ```
 
 6. Se ejecutaran los 120 escenarios de pruebas de acuerdo al contenido mencionado anteirormente.
+
+## Instrucciones de instalación 2. 
+
+# Instrucciones de instalación.
+Cada carpeta contiene 40 casos de preueba implementados de acuerdo a la estrategia de pruebas señalada en su carpeta contenedora.  Para configura el proyecto en ambiente de instalación, siga el siguiente procedimiento:
+
+1. A través de una consola, genere una carpeta para descargar el proyecto.
+2. Ingrese a la carpeta creada, clone el repositorioa través del  comando "git clone https://github.com/gvillalbag94/ghost-pruebas-automatizadas.git".
+3. Ingrese con una consola a la carpeta "GHOST-PRUEBAS-AUTOMATIZADAS".
+4. Ejecute el comando "npm install cypress"
+5. Ejecute el comando "npm install faker"
+6. Ejecute el comando "./node_modules/.bin/cypress open"
+7. El comando anterior desplegará la consolta de Cypress y en su interior, cada uno de los casos de prueba generados.
+8. Ingrese a la carpeta "pruebas_aleatorias" y ejecute cualquiera de los archivos desplegados.
+9. Ingrese a la carpeta "pruebas-apriori" y ejecute cualquiera de los archivos desplegados.
+10. Ingrese a la carpeta "pruebas_pseudoaleatorias" y ejecute cualquiera de los archivos desplegados.
 
 
 ## Incidencias:

@@ -18,8 +18,9 @@ context('Generar un slug con el limite de caracteres permitidos', () => {
             (response) => {
               console.log(response.body);
               cy.wait(2000)
-              name = response.body.name_short;
-              slug = response.body.slug_limit;
+              var numero = Math.floor(Math.random()*response.body.length);
+              name = response.body[numero].name_short;
+              slug = response.body[numero].slug_limit;
               console.log(name);
               console.log(slug);
             })

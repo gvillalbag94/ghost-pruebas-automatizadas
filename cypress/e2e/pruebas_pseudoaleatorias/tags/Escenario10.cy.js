@@ -17,7 +17,8 @@ context('Generar un nombre de un tag mayor al limite de caracteres permitidos', 
             (response) => {
               console.log(response.body);
               cy.wait(2000)
-              name = response.body.name_long;
+              var numero = Math.floor(Math.random()*response.body.length);
+              name = response.body[numero].name_long;
               console.log(name);
             })
         cy.wait(2000);

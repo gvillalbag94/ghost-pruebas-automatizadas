@@ -18,8 +18,9 @@ context('Generar un color invalido', () => {
             (response) => {
               console.log(response.body);
               cy.wait(2000)
-              name = response.body.name_short;
-              color = response.body.invalid_color;
+              var numero = Math.floor(Math.random()*response.body.length);
+              name = response.body[numero].name_short;
+              color = response.body[numero].invalid_color;
               console.log(name);
               console.log(color);
             })

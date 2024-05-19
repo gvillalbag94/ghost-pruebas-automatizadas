@@ -38,6 +38,7 @@ El presente repositorio contiene un proyecto Cypress, en su interior puede ubica
 - /GHOST-PRUEBAS-AUTOMATIZADA/cypress/e2e/pruebas-apriori
 - /GHOST-PRUEBAS-AUTOMATIZADA/cypress/e2e/pruebas_pseudoaleatorias
 
+Los 120 escenarios se encuentran descritos en la sección de la [WIKI](https://github.com/gvillalbag94/ghost-pruebas-automatizadas/wiki/TALLER-SEMANA-7-%E2%80%90-GHOST-PRUEBAS-AUTOMATIZADAS) en el repositorio.
 
 ## Instrucciones de instalación 1.
 
@@ -80,10 +81,6 @@ Cada carpeta contiene 40 casos de preueba implementados de acuerdo a la estrateg
 
 ## Incidencias:
 
-1. Se espera que las prueba falle en el escenario de pruebas [Escenario 5](https://github.com/gvillalbag94/ghost-pruebas-automatizadas/issues/5)  debido a que el uso de un caracter especial para crear una "page" no es valido, este error sucede en las pruebas con datos aleatorios, a-priori y pseudoaleatorios.
-
-2. Se espera que las prueba falle en el escenario de pruebas [Escenario 10](https://github.com/gvillalbag94/ghost-pruebas-automatizadas/issues/6)  debido a que el uso de un emojis para crear una "page" no es valido, este error sucede en las pruebas con datos aleatorios, a-priori y pseudoaleatorios.
-
-3. Se espera que las prueba falle en el escenario de pruebas [Escenario 9](https://github.com/gvillalbag94/ghost-pruebas-automatizadas/issues/7)  debido a que el uso de URLs extensas para crear una "page" no es valido, este error sucede en las pruebas con datos pseudoaleatorios.
+Las inicidecias encontradas se encuentra en la sección de [ISSUES](https://github.com/gvillalbag94/ghost-pruebas-automatizadas/issues) en el repositorio. Se espera que las pruebas fallen en los issues mencionados.
 
 

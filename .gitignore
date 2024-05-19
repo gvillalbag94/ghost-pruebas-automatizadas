@@ -1,5 +1,6 @@
 # Ignore the downloads cypress folder
 cypress/downloads
+cypress/screenshots
 
 # Ignore the node_modules dependencies
 node_modules

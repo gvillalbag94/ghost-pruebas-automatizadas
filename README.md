@@ -25,9 +25,9 @@ Esta URL se utiliza en cada caso de prueba cypres, al obtener el response del ap
 # Contenido del repositorio.
 El presente repositorio contiene un proyecto Cypress, en su interior puede ubicarse las siguientes carpetas:
 
-- /GHOST-RUEBAS-AUTOMATIZADAS/cypress/e2e/pruebas_aleatorias
-- /GHOST-RUEBAS-AUTOMATIZADA/cypress/e2e/pruebas-apriori
-- /GHOST-RUEBAS-AUTOMATIZADA/cypress/e2e/pruebas_pseudoaleatorias
+- /GHOST-PRUEBAS-AUTOMATIZADAS/cypress/e2e/pruebas_aleatorias
+- /GHOST-PRUEBAS-AUTOMATIZADA/cypress/e2e/pruebas-apriori
+- /GHOST-PRUEBAS-AUTOMATIZADA/cypress/e2e/pruebas_pseudoaleatorias
 
 
 # Instrucciones de instalación.
